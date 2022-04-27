@@ -4,4 +4,4 @@ Csapattagok:
 - Vargacz Gergő
 - Riazáncev Csanád
 - Gyurci
-- 
+- Milánkovics Sámuel
