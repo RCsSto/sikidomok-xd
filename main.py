@@ -7,3 +7,4 @@ from tkinter import *
 # Def
 
 # Widgetek
+
