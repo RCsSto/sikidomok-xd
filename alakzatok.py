@@ -99,8 +99,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
     # Trapéz-------------------------------------------------------------------------
     
 def felszin():
@@ -116,18 +114,18 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A trapéz felszíine")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl4 = Toplevel(foablak)
+    abl4.title("A trapéz felszíine")
+    abl4.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl4, text = "a:")
+    szoveg2 = Label(abl4, text = "b:")
+    szoveg3 = Label(abl4, text = "c:")
+    szoveg4 = Label(abl4, text = "Eredmény:")
+    gomb1 = Button(abl4, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl4)
+    mezo2 = Entry(abl4)
+    mezo3 = Entry(abl4)
+    mezo4 = Entry(abl4)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -138,7 +136,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl4.mainloop()
 
 def terfogat():
     def szamit():
@@ -153,19 +151,19 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A trapéz térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl4 = Toplevel(foablak)
+    abl4.title("A trapéz térfogata")
+    abl4.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl4, text = "a:")
+    szoveg2 = Label(abl4, text = "b:")
+    szoveg3 = Label(abl4, text = "c:")
+    szoveg4 = Label(abl4, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl4, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl4)
+    mezo2 = Entry(abl4)
+    mezo3 = Entry(abl4)
+    mezo4 = Entry(abl4)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -176,7 +174,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl4.mainloop()
 
 foablak = Tk()
 foablak.title("A trapéz adatai")
@@ -195,8 +193,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
 
     # Paralelogramma-------------------------------------------------------------------------
 
@@ -213,18 +209,18 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A paralelogramma felszíine")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl5 = Toplevel(foablak)
+    abl5.title("A paralelogramma felszíine")
+    abl5.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl5, text = "a:")
+    szoveg2 = Label(abl5, text = "b:")
+    szoveg3 = Label(abl5, text = "c:")
+    szoveg4 = Label(abl5, text = "Eredmény:")
+    gomb1 = Button(abl5, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl5)
+    mezo2 = Entry(abl5)
+    mezo3 = Entry(abl5)
+    mezo4 = Entry(abl5)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -235,7 +231,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl5.mainloop()
 
 def terfogat():
     def szamit():
@@ -250,19 +246,19 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A paralelogramma térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl5 = Toplevel(foablak)
+    abl5.title("A paralelogramma térfogata")
+    abl5.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl5, text = "a:")
+    szoveg2 = Label(abl5, text = "b:")
+    szoveg3 = Label(abl5, text = "c:")
+    szoveg4 = Label(abl5, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl5, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl5)
+    mezo2 = Entry(abl5)
+    mezo3 = Entry(abl5)
+    mezo4 = Entry(abl5)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -273,7 +269,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl5.mainloop()
 
 foablak = Tk()
 foablak.title("A paralelogramma adatai")
@@ -292,8 +288,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
     # Téglalap-------------------------------------------------------------------------
 
 def felszin():
@@ -309,18 +303,18 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A téglalap felszíine")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl6 = Toplevel(foablak)
+    abl6.title("A téglalap felszíine")
+    abl6.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl6, text = "a:")
+    szoveg2 = Label(abl6, text = "b:")
+    szoveg3 = Label(abl6, text = "c:")
+    szoveg4 = Label(abl6, text = "Eredmény:")
+    gomb1 = Button(abl6, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl6)
+    mezo2 = Entry(abl6)
+    mezo3 = Entry(abl6)
+    mezo4 = Entry(abl6)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -331,7 +325,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl6.mainloop()
 
 def terfogat():
     def szamit():
@@ -346,19 +340,19 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A téglalap térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl6 = Toplevel(foablak)
+    abl6.title("A téglalap térfogata")
+    abl6.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl6, text = "a:")
+    szoveg2 = Label(abl6, text = "b:")
+    szoveg3 = Label(abl6, text = "c:")
+    szoveg4 = Label(abl6, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl6, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl6)
+    mezo2 = Entry(abl6)
+    mezo3 = Entry(abl6)
+    mezo4 = Entry(abl6)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -369,7 +363,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl6.mainloop()
 
 foablak = Tk()
 foablak.title("A téglalap adatai")
@@ -388,8 +382,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
     # Deltoid-------------------------------------------------------------------------
 
 def felszin():
@@ -405,18 +397,18 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A deltoid felszíine")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl6 = Toplevel(foablak)
+    abl6.title("A deltoid felszíine")
+    abl6.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl6, text = "a:")
+    szoveg2 = Label(abl6, text = "b:")
+    szoveg3 = Label(abl6, text = "c:")
+    szoveg4 = Label(abl6, text = "Eredmény:")
+    gomb1 = Button(abl6, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl6)
+    mezo2 = Entry(abl6)
+    mezo3 = Entry(abl6)
+    mezo4 = Entry(abl6)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -427,7 +419,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl6.mainloop()
 
 def terfogat():
     def szamit():
@@ -442,19 +434,19 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A deltoid térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl6 = Toplevel(foablak)
+    abl6.title("A deltoid térfogata")
+    abl6.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl6, text = "a:")
+    szoveg2 = Label(abl6, text = "b:")
+    szoveg3 = Label(abl6, text = "c:")
+    szoveg4 = Label(abl6, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl6, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl6)
+    mezo2 = Entry(abl6)
+    mezo3 = Entry(abl6)
+    mezo4 = Entry(abl6)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -465,7 +457,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl6.mainloop()
 
 foablak = Tk()
 foablak.title("A deltoid adatai")
@@ -484,8 +476,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
     # Rombusz-------------------------------------------------------------------------
 
 def felszin():
@@ -501,18 +491,18 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A rombusz felszíne")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl7 = Toplevel(foablak)
+    abl7.title("A rombusz felszíne")
+    abl7.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl7, text = "a:")
+    szoveg2 = Label(abl7, text = "b:")
+    szoveg3 = Label(abl7, text = "c:")
+    szoveg4 = Label(abl7, text = "Eredmény:")
+    gomb1 = Button(abl7, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl7)
+    mezo2 = Entry(abl7)
+    mezo3 = Entry(abl7)
+    mezo4 = Entry(abl7)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -523,7 +513,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl7.mainloop()
 
 def terfogat():
     def szamit():
@@ -538,19 +528,19 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A rombusz térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl7 = Toplevel(foablak)
+    abl7.title("A rombusz térfogata")
+    abl7.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl7, text = "a:")
+    szoveg2 = Label(abl7, text = "b:")
+    szoveg3 = Label(abl7, text = "c:")
+    szoveg4 = Label(abl7, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl7, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl7)
+    mezo2 = Entry(abl7)
+    mezo3 = Entry(abl7)
+    mezo4 = Entry(abl7)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -561,7 +551,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl7.mainloop()
 
 foablak = Tk()
 foablak.title("A rombusz adatai")
@@ -580,8 +570,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
     # Négyzet-------------------------------------------------------------------------
 
 def felszin():
@@ -595,16 +583,16 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A négyzet felszíine")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl8 = Toplevel(foablak)
+    abl8.title("A négyzet felszíine")
+    abl8.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl8, text = "a:")
+    szoveg4 = Label(abl8, text = "Eredmény:")
+    gomb1 = Button(abl8, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl8)
+    mezo2 = Entry(abl8)
+    mezo3 = Entry(abl8)
+    mezo4 = Entry(abl8)
     szoveg1.grid(row = 1)
     szoveg4.grid(row = 5)
     gomb1.grid(row = 4, column = 2, sticky = W)
@@ -613,7 +601,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl8.mainloop()
 
 def terfogat():
     def szamit():
@@ -626,17 +614,17 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A négyzet térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl8 = Toplevel(foablak)
+    abl8.title("A négyzet térfogata")
+    abl8.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl8, text = "a:")
+    szoveg4 = Label(abl8, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl8, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl8)
+    mezo2 = Entry(abl8)
+    mezo3 = Entry(abl8)
+    mezo4 = Entry(abl8)
     szoveg1.grid(row = 1)
     szoveg4.grid(row = 5)
     gomb1.grid(row = 4, column = 2, sticky = W)
@@ -645,7 +633,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl8.mainloop()
 
 foablak = Tk()
 foablak.title("A négyzet adatai")
@@ -664,8 +652,6 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-foablak.mainloop()
-
     # Kör-------------------------------------------------------------------------
 
 def felszin():
@@ -681,18 +667,18 @@ def felszin():
             mezo4.delete(0, END)
             mezo4.insert(0, str(felszin))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A Kör felszíine")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    abl9 = Toplevel(foablak)
+    abl9.title("A Kör felszíine")
+    abl9.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl9, text = "a:")
+    szoveg2 = Label(abl9, text = "b:")
+    szoveg3 = Label(abl9, text = "c:")
+    szoveg4 = Label(abl9, text = "Eredmény:")
+    gomb1 = Button(abl9, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl9)
+    mezo2 = Entry(abl9)
+    mezo3 = Entry(abl9)
+    mezo4 = Entry(abl9)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -703,7 +689,7 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl9.mainloop()
 
 def terfogat():
     def szamit():
@@ -718,19 +704,19 @@ def terfogat():
             mezo4.delete(0, END)
             mezo4.insert(0, str(terfogat))
 
-    abl3 = Toplevel(foablak)
-    abl3.title("A Kör térfogata")
-    abl3.minsize(width = 300, height = 100)
-    szoveg1 = Label(abl3, text = "a:")
-    szoveg2 = Label(abl3, text = "b:")
-    szoveg3 = Label(abl3, text = "c:")
-    szoveg4 = Label(abl3, text = "Eredmény:")
+    abl9 = Toplevel(foablak)
+    abl9.title("A Kör térfogata")
+    abl9.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl9, text = "a:")
+    szoveg2 = Label(abl9, text = "b:")
+    szoveg3 = Label(abl9, text = "c:")
+    szoveg4 = Label(abl9, text = "Eredmény:")
 
-    gomb1 = Button(abl3, text = "Számítás", command = szamit)
-    mezo1 = Entry(abl3)
-    mezo2 = Entry(abl3)
-    mezo3 = Entry(abl3)
-    mezo4 = Entry(abl3)
+    gomb1 = Button(abl9, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl9)
+    mezo2 = Entry(abl9)
+    mezo3 = Entry(abl9)
+    mezo4 = Entry(abl9)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
     szoveg3.grid(row = 3)
@@ -741,7 +727,7 @@ def terfogat():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
     
-    abl3.mainloop()
+    abl9.mainloop()
 
 foablak = Tk()
 foablak.title("A Kör adatai")
