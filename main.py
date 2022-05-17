@@ -2,6 +2,7 @@
 
 import sys
 from alakzatok import * 
+from ablakok import * 
 from tkinter import * 
 
 # Foablak
