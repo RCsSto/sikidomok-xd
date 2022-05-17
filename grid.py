@@ -1,3 +1,5 @@
+# Ez egy példa
+
 from tkinter import *
 
 def nevjegy():
