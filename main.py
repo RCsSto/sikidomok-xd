@@ -1,8 +1,8 @@
 # Import
 
 import sys
-import alakzatok
-import ablakok
+from alakzatok import * 
+from ablakok import *      
 from tkinter import * 
 
 # Foablak
@@ -385,8 +385,8 @@ def terfogat():
     
     abl6.mainloop()
 
-menu_seven = Menubutton(menusor, text = "Deltoid", underline = 0)
-menu_seven.pack(side = LEFT)
+menu_six = Menubutton(menusor, text = "Deltoid", underline = 0)
+menu_six.pack(side = LEFT)
 
 deltoid = Menu(menu_six)
 deltoid.add_command(label = "Felszín", underline = 0, command = felszin)
