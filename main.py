@@ -70,12 +70,6 @@ def ablak_harom_masodik():
     
     abl3.mainloop()
 
-<<<<<<< HEAD
-=======
-menusor = Frame(foablak)
-menusor.pack(side = TOP, fill = X)
-
->>>>>>> 69ca35afcaf8b93518cd84a9894d35ee7f4543cb
 menu_two = Menubutton(menusor, text = "Háromszög", underline = 0)
 menu_two.pack(side = LEFT)
 
@@ -135,12 +129,6 @@ def ablak_negy_masodik():
     
     abl4.mainloop()
 
-<<<<<<< HEAD
-=======
-menusor = Frame(foablak)
-menusor.pack(side = TOP, fill = X)
-
->>>>>>> 69ca35afcaf8b93518cd84a9894d35ee7f4543cb
 menu_three = Menubutton(menusor, text = "Trapéz", underline = 0)
 menu_three.pack(side = LEFT)
 
