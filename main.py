@@ -33,16 +33,180 @@ menu_one.config(menu = file)
 
     # Második menü
 
+def felszin():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        felszin = 2*(a*b+a*c+b*c)
+        if felszin < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(felszin))
+
+    abl3 = Toplevel(foablak)
+    abl3.title("A Háromszög felszíne")
+    abl3.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl3, text = "a:")
+    szoveg2 = Label(abl3, text = "b:")
+    szoveg3 = Label(abl3, text = "c:")
+    szoveg4 = Label(abl3, text = "Eredmény:")
+    gomb1 = Button(abl3, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl3)
+    mezo2 = Entry(abl3)
+    mezo3 = Entry(abl3)
+    mezo4 = Entry(abl3)
+    szoveg1.grid(row = 1)
+    szoveg2.grid(row = 2)
+    szoveg3.grid(row = 3)
+    szoveg4.grid(row = 5)
+    gomb1.grid(row = 4, column = 2, sticky = W)
+    mezo1.grid(row = 1, column = 2, sticky = W)
+    mezo2.grid(row = 2, column = 2, sticky = W)
+    mezo3.grid(row = 3, column = 2, sticky = W)
+    mezo4.grid(row = 5, column = 2, sticky = W)
+    
+    abl3.mainloop()
+
+def terfogat():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        terfogat = a*b*c
+        if terfogat < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(terfogat))
+
+    abl3 = Toplevel(foablak)
+    abl3.title("A háromszög térfogata")
+    abl3.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl3, text = "a:")
+    szoveg2 = Label(abl3, text = "b:")
+    szoveg3 = Label(abl3, text = "c:")
+    szoveg4 = Label(abl3, text = "Eredmény:")
+
+    gomb1 = Button(abl3, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl3)
+    mezo2 = Entry(abl3)
+    mezo3 = Entry(abl3)
+    mezo4 = Entry(abl3)
+    szoveg1.grid(row = 1)
+    szoveg2.grid(row = 2)
+    szoveg3.grid(row = 3)
+    szoveg4.grid(row = 5)
+    gomb1.grid(row = 4, column = 2, sticky = W)
+    mezo1.grid(row = 1, column = 2, sticky = W)
+    mezo2.grid(row = 2, column = 2, sticky = W)
+    mezo3.grid(row = 3, column = 2, sticky = W)
+    mezo4.grid(row = 5, column = 2, sticky = W)
+    
+    abl3.mainloop()
+
+foablak = Tk()
+foablak.title("A háromszög adatai")
+foablak.minsize(width = 300, height = 100)
+
+menusor = Frame(foablak)
+menusor.pack(side = TOP, fill = X)
+
 menu_two = Menubutton(menusor, text = "Háromszög", underline = 0)
 menu_two.pack(side = LEFT)
 
 haromszog = Menu(menu_two)
-haromszog.add_command(label = "Felszín", underline = 0)
-haromszog.add_command(label = "Térfogat", underline = 0)
+haromszog.add_command(label = "Felszín", underline = 0, command = felszin)
+haromszog.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_two.config(menu = haromszog)
 
 
     # Harmadik Menü
+
+def felszin():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        felszin = 2*(a*b+a*c+b*c)
+        if felszin < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(felszin))
+
+    abl4 = Toplevel(foablak)
+    abl4.title("A trapéz felszíine")
+    abl4.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl4, text = "a:")
+    szoveg2 = Label(abl4, text = "b:")
+    szoveg3 = Label(abl4, text = "c:")
+    szoveg4 = Label(abl4, text = "Eredmény:")
+    gomb1 = Button(abl4, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl4)
+    mezo2 = Entry(abl4)
+    mezo3 = Entry(abl4)
+    mezo4 = Entry(abl4)
+    szoveg1.grid(row = 1)
+    szoveg2.grid(row = 2)
+    szoveg3.grid(row = 3)
+    szoveg4.grid(row = 5)
+    gomb1.grid(row = 4, column = 2, sticky = W)
+    mezo1.grid(row = 1, column = 2, sticky = W)
+    mezo2.grid(row = 2, column = 2, sticky = W)
+    mezo3.grid(row = 3, column = 2, sticky = W)
+    mezo4.grid(row = 5, column = 2, sticky = W)
+    
+    abl4.mainloop()
+
+def terfogat():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        terfogat = a*b*c
+        if terfogat < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(terfogat))
+
+    abl4 = Toplevel(foablak)
+    abl4.title("A trapéz térfogata")
+    abl4.minsize(width = 300, height = 100)
+    szoveg1 = Label(abl4, text = "a:")
+    szoveg2 = Label(abl4, text = "b:")
+    szoveg3 = Label(abl4, text = "c:")
+    szoveg4 = Label(abl4, text = "Eredmény:")
+
+    gomb1 = Button(abl4, text = "Számítás", command = szamit)
+    mezo1 = Entry(abl4)
+    mezo2 = Entry(abl4)
+    mezo3 = Entry(abl4)
+    mezo4 = Entry(abl4)
+    szoveg1.grid(row = 1)
+    szoveg2.grid(row = 2)
+    szoveg3.grid(row = 3)
+    szoveg4.grid(row = 5)
+    gomb1.grid(row = 4, column = 2, sticky = W)
+    mezo1.grid(row = 1, column = 2, sticky = W)
+    mezo2.grid(row = 2, column = 2, sticky = W)
+    mezo3.grid(row = 3, column = 2, sticky = W)
+    mezo4.grid(row = 5, column = 2, sticky = W)
+    
+    abl4.mainloop()
+
+foablak = Tk()
+foablak.title("A trapéz adatai")
+foablak.minsize(width = 300, height = 100)
+
+menusor = Frame(foablak)
+menusor.pack(side = TOP, fill = X)
 
 menu_three = Menubutton(menusor, text = "Trapéz", underline = 0)
 menu_three.pack(side = LEFT)
