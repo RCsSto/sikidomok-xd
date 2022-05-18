@@ -1,6 +1,6 @@
 # Import
 
-import main
+from main import * 
 
 # Formák 
 
