@@ -4,9 +4,17 @@ from tkinter import *
 
 def nevjegy():
     abl2 = Toplevel(foablak)
-    uz2 = Message(abl2, text = "Készítette: Milánkovics Sámuel")
+    uz2 = Message(abl2, text = "Készítette:")
+    uz3 = Message(abl2, text = "M. Sámuel")
+    uz4 = Message(abl2, text = "R. Csanád")
+    uz5 = Message(abl2, text = "V. Gergő")
+    uz6 = Message(abl2, text = "F. György")
     gomb2 = Button(abl2, text = "kilép", command = abl2.destroy)
     uz2.pack()
+    uz3.pack()
+    uz4.pack()
+    uz5.pack()
+    uz6.pack()
     gomb2.pack()
     abl2.mainloop()
 
@@ -24,7 +32,7 @@ def felszin():
             mezo4.insert(0, str(felszin))
 
     abl3 = Toplevel(foablak)
-    abl3.title("A téglatest felszíine")
+    abl3.title("A téglatest felszíne")
     abl3.minsize(width = 300, height = 100)
     szoveg1 = Label(abl3, text = "a:")
     szoveg2 = Label(abl3, text = "b:")
@@ -107,7 +115,19 @@ teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
-def ablak_harom():
+def felszin():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        felszin = 2*(a*b+a*c+b*c)
+        if felszin < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(felszin))
+
     abl3 = Toplevel(foablak)
     abl3.title("A Háromszög felszíne")
     abl3.minsize(width = 300, height = 100)
@@ -130,7 +150,18 @@ def ablak_harom():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
 
-def ablak_harom_masodik():
+def terfogat():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        terfogat = a*b*c
+        if terfogat < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(terfogat))
     abl3 = Toplevel(foablak)
     abl3.title("A háromszög térfogata")
     abl3.minsize(width = 300, height = 100)
@@ -164,7 +195,19 @@ haromszog.add_command(label = "Felszín", underline = 0, command = felszin)
 haromszog.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_two.config(menu = haromszog)
 
-def ablak_negy():
+def felszin():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        felszin = 2*(a*b+a*c+b*c)
+        if felszin < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(felszin))
+
     abl4 = Toplevel(foablak)
     abl4.title("A trapéz felszíine")
     abl4.minsize(width = 300, height = 100)
@@ -187,7 +230,19 @@ def ablak_negy():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
 
-def ablak_negy_masodik():
+def terfogat():
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        terfogat = a*b*c
+        if terfogat < 0:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str("Nincs eredmény"))
+        else:
+            mezo4.delete(0, END)
+            mezo4.insert(0, str(terfogat))
+
     abl4 = Toplevel(foablak)
     abl4.title("A trapéz térfogata")
     abl4.minsize(width = 300, height = 100)
@@ -299,8 +354,8 @@ menu_four = Menubutton(menusor, text = "Paralelogramma", underline = 0)
 menu_four.pack(side = LEFT)
 
 paralelogramma = Menu(menu_four)
-paralelogramma.add_command(label = "Felszín", underline = 0)
-paralelogramma.add_command(label = "Térfogat", underline = 0)
+paralelogramma.add_command(label = "Felszín", underline = 0, command = felszin)
+paralelogramma.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_four.config(menu = paralelogramma)
 
 def felszin():
@@ -550,8 +605,8 @@ menu_seven = Menubutton(menusor, text = "Rombusz", underline = 0)
 menu_seven.pack(side = LEFT)
 
 rombusz = Menu(menu_seven)
-rombusz.add_command(label = "Felszín", underline = 0)
-rombusz.add_command(label = "Térfogat", underline = 0)
+rombusz.add_command(label = "Felszín", underline = 0, command = felszin)
+rombusz.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_seven.config(menu = rombusz)
 
 def felszin():
