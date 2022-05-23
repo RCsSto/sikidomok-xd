@@ -209,7 +209,7 @@ def felszin():
             mezo4.insert(0, str(felszin))
 
     abl4 = Toplevel(foablak)
-    abl4.title("A trapéz felszíine")
+    abl4.title("A trapéz felszíne")
     abl4.minsize(width = 300, height = 100)
     szoveg1 = Label(abl4, text = "a:")
     szoveg2 = Label(abl4, text = "b:")
@@ -289,7 +289,7 @@ def felszin():
             mezo4.insert(0, str(felszin))
 
     abl5 = Toplevel(foablak)
-    abl5.title("A paralelogramma felszíine")
+    abl5.title("A paralelogramma felszíne")
     abl5.minsize(width = 300, height = 100)
     szoveg1 = Label(abl5, text = "a:")
     szoveg2 = Label(abl5, text = "b:")
@@ -372,7 +372,7 @@ def felszin():
             mezo4.insert(0, str(felszin))
 
     abl6 = Toplevel(foablak)
-    abl6.title("A téglalap felszíine")
+    abl6.title("A téglalap felszíne")
     abl6.minsize(width = 300, height = 100)
     szoveg1 = Label(abl6, text = "a:")
     szoveg2 = Label(abl6, text = "b:")
@@ -621,7 +621,7 @@ def felszin():
             mezo4.insert(0, str(felszin))
 
     abl8 = Toplevel(foablak)
-    abl8.title("A négyzet felszíine")
+    abl8.title("A négyzet felszíne")
     abl8.minsize(width = 300, height = 100)
     szoveg1 = Label(abl8, text = "a:")
     szoveg4 = Label(abl8, text = "Eredmény:")
@@ -694,7 +694,7 @@ def felszin():
             mezo4.insert(0, str(felszin))
 
     abl9 = Toplevel(foablak)
-    abl9.title("A Kör felszíine")
+    abl9.title("A Kör felszíne")
     abl9.minsize(width = 300, height = 100)
     szoveg1 = Label(abl9, text = "a:")
     szoveg2 = Label(abl9, text = "b:")
