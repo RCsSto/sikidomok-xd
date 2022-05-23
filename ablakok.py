@@ -1,1 +1,0 @@
-# Ide majd a mellékablakok jönnek.
