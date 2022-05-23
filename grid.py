@@ -1,6 +1,10 @@
-# Ez egy példa
+# Biztonsági file, ha az előzőt elrontanánk. 
+
+#==================================================================================
 
 from tkinter import *
+
+#==================================================================================
 
 def nevjegy():
     abl2 = Toplevel(foablak)
@@ -93,9 +97,13 @@ def terfogat():
     
     abl3.mainloop()
 
+#==================================================================================
+
 foablak = Tk()
 foablak.title("Síkidomok adatai")
 foablak.minsize(width = 300, height = 100)
+
+#==================================================================================
 
 menusor = Frame(foablak)
 menusor.pack(side = TOP, fill = X)
@@ -114,6 +122,8 @@ teglatest.add_command(label = "Felszín", command = felszin, underline = 0)
 teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
 teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -187,6 +197,8 @@ def terfogat():
     
     abl3.mainloop()
 
+#==================================================================================
+
 menu_two = Menubutton(menusor, text = "Háromszög", underline = 0)
 menu_two.pack(side = LEFT)
 
@@ -194,6 +206,8 @@ haromszog = Menu(menu_two)
 haromszog.add_command(label = "Felszín", underline = 0, command = felszin)
 haromszog.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_two.config(menu = haromszog)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -267,8 +281,12 @@ def terfogat():
     
     abl4.mainloop()
 
+#==================================================================================
+
 menu_three = Menubutton(menusor, text = "Trapéz", underline = 0)
 menu_three.pack(side = LEFT)
+
+#==================================================================================
 
 trapez = Menu(menu_three)
 trapez.add_command(label = "Felszín", underline = 0, command = felszin)
@@ -350,6 +368,8 @@ def terfogat():
     
     abl5.mainloop()
 
+#==================================================================================
+
 menu_four = Menubutton(menusor, text = "Paralelogramma", underline = 0)
 menu_four.pack(side = LEFT)
 
@@ -357,6 +377,8 @@ paralelogramma = Menu(menu_four)
 paralelogramma.add_command(label = "Felszín", underline = 0, command = felszin)
 paralelogramma.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_four.config(menu = paralelogramma)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -433,6 +455,8 @@ def terfogat():
     
     abl6.mainloop()
 
+#==================================================================================
+
 menu_five = Menubutton(menusor, text = "Téglalap", underline = 0)
 menu_five.pack(side = LEFT)
 
@@ -440,6 +464,8 @@ teglalap = Menu(menu_five)
 teglalap.add_command(label = "Felszín", underline = 0, command = felszin)
 teglalap.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_five.config(menu = teglalap)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -516,6 +542,8 @@ def terfogat():
     
     abl6.mainloop()
 
+#==================================================================================
+
 menu_six = Menubutton(menusor, text = "Deltoid", underline = 0)
 menu_six.pack(side = LEFT)
 
@@ -523,6 +551,8 @@ deltoid = Menu(menu_six)
 deltoid.add_command(label = "Felszín", underline = 0, command = felszin)
 deltoid.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_six.config(menu = deltoid)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -599,7 +629,7 @@ def terfogat():
     
     abl7.mainloop()
 
-
+#==================================================================================
 
 menu_seven = Menubutton(menusor, text = "Rombusz", underline = 0)
 menu_seven.pack(side = LEFT)
@@ -608,6 +638,8 @@ rombusz = Menu(menu_seven)
 rombusz.add_command(label = "Felszín", underline = 0, command = felszin)
 rombusz.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_seven.config(menu = rombusz)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -672,6 +704,8 @@ def terfogat():
     
     abl8.mainloop()
 
+#==================================================================================
+
 menu_eight = Menubutton(menusor, text = "Négyzet", underline = 0)
 menu_eight.pack(side = LEFT)
 
@@ -679,6 +713,8 @@ negyzet = Menu(menu_eight)
 negyzet.add_command(label = "Felszín", underline = 0, command = felszin)
 negyzet.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_eight.config(menu = negyzet)
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -755,6 +791,8 @@ def terfogat():
     
     abl9.mainloop()
 
+#==================================================================================
+
 menu_nine = Menubutton(menusor, text = "Kör", underline = 0)
 menu_nine.pack(side = LEFT)
 
@@ -762,5 +800,7 @@ kor = Menu(menu_nine)
 kor.add_command(label = "Felszín", underline = 0, command = felszin)
 kor.add_command(label = "Térfogat", underline = 0, command = terfogat)
 menu_nine.config(menu = kor)
+
+#==================================================================================
 
 foablak.mainloop()
