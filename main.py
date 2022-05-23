@@ -1,4 +1,6 @@
- # Main 
+#==================================================================================
+
+# Main
 
 #==================================================================================
 
@@ -22,6 +24,8 @@ def nevjegy():
     uz6.pack()
     gomb2.pack()
     abl2.mainloop()
+
+#==================================================================================
 
 def felszin():
     def szamit():
@@ -57,8 +61,28 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+#==================================================================================
     
+    board = turtle.Turtle()
+
+    board.forward(100)
+    board.left(90) 
+
+    board.forward(100)
+    board.left(90) 
+
+    board.forward(100)
+    board.left(90) 
+
+    board.forward(100)
+    board.left(90) 
+
+#==================================================================================
+
     abl3.mainloop()
+
+#==================================================================================
 
 def terfogat():
     def szamit():
@@ -95,6 +119,25 @@ def terfogat():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+    #==================================================================================
+
+    board = turtle.Turtle()
+
+    board.forward(100)
+    board.left(90) 
+
+    board.forward(100)
+    board.left(90) 
+
+    board.forward(100)
+    board.left(90) 
+
+    board.forward(100)
+    board.left(90) 
+
+
+#==================================================================================
     
     abl3.mainloop()
 
@@ -121,7 +164,6 @@ menu2.pack(side = LEFT)
 teglatest = Menu(menu2)
 teglatest.add_command(label = "Felszín", command = felszin, underline = 0)
 teglatest.add_command(label = "Térfogat", command = terfogat, underline = 0)
-teglatest.add_command(label = "Kilépés", command = foablak.destroy, underline = 0)
 menu2.config(menu = teglatest)
 
 #==================================================================================
@@ -161,6 +203,22 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
 
+    #==================================================================================
+
+    board = turtle.Turtle()
+
+    board.forward(100)
+ 
+    board.left(120)
+    board.forward(100)
+ 
+    board.left(120)
+    board.forward(100)
+
+    abl3.mainloop()
+
+#==================================================================================
+
 def terfogat():
     def szamit():
         a = eval(mezo1.get())
@@ -195,6 +253,21 @@ def terfogat():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+#==================================================================================
+
+    board = turtle.Turtle()
+
+    board.forward(100)
+ 
+    board.left(120)
+    board.forward(100)
+ 
+    board.left(120)
+    board.forward(100)
+
+
+#==================================================================================
     
     abl3.mainloop()
 
@@ -245,6 +318,24 @@ def felszin():
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
 
+#==================================================================================
+
+    board = turtle.Turtle()
+
+    board.right(120)
+    board.forward(80)
+    
+    board.left(120)
+    board.forward(180)
+    board.left(120)
+    
+    board.forward(80)
+    board.left(60)
+
+    board.forward(100)
+
+#==================================================================================
+
 def terfogat():
     def szamit():
         a = eval(mezo1.get())
@@ -279,6 +370,24 @@ def terfogat():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+#==================================================================================
+
+    board = turtle.Turtle()
+
+    board.right(120)
+    board.forward(80)
+    
+    board.left(120)
+    board.forward(180)
+    board.left(120)
+    
+    board.forward(80)
+    board.left(60)
+
+    board.forward(100)
+
+#==================================================================================
     
     abl4.mainloop()
 
@@ -328,6 +437,24 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+#==================================================================================
+
+    board = turtle.Turtle()
+
+    board.left(105)
+    board.forward(300)
+
+    board.left(75)
+    board.forward(100)
+
+    board.left(105)
+    board.forward(300)
+
+    board.left(75)
+    board.forward(100)
+
+#==================================================================================
     
     abl5.mainloop()
 
@@ -415,6 +542,24 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+#==================================================================================
+
+    board = turtle.Turtle()
+
+    board.left(105)
+    board.forward(300)
+
+    board.left(75)
+    board.forward(100)
+
+    board.left(105)
+    board.forward(300)
+
+    board.left(75)
+    board.forward(100)
+
+#==================================================================================
     
     abl6.mainloop()
 
