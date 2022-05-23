@@ -512,8 +512,7 @@ def felszin():
     def szamit():
         a = eval(mezo1.get())
         b = eval(mezo2.get())
-        c = eval(mezo3.get())
-        felszin = 2*(a*b+a*c+b*c)
+        felszin = 2*(a*b)
         if felszin < 0:
             mezo4.delete(0, END)
             mezo4.insert(0, str("Nincs eredmény"))
@@ -526,7 +525,6 @@ def felszin():
     abl6.minsize(width = 300, height = 100)
     szoveg1 = Label(abl6, text = "a:")
     szoveg2 = Label(abl6, text = "b:")
-    szoveg3 = Label(abl6, text = "c:")
     szoveg4 = Label(abl6, text = "Eredmény:")
     gomb1 = Button(abl6, text = "Számítás", command = szamit)
     mezo1 = Entry(abl6)
@@ -535,7 +533,6 @@ def felszin():
     mezo4 = Entry(abl6)
     szoveg1.grid(row = 1)
     szoveg2.grid(row = 2)
-    szoveg3.grid(row = 3)
     szoveg4.grid(row = 5)
     gomb1.grid(row = 4, column = 2, sticky = W)
     mezo1.grid(row = 1, column = 2, sticky = W)
@@ -547,17 +544,17 @@ def felszin():
 
     board = turtle.Turtle()
 
-    board.left(105)
-    board.forward(300)
-
-    board.left(75)
+    board.left(-90)
     board.forward(100)
 
-    board.left(105)
+    board.left(90)
     board.forward(300)
 
-    board.left(75)
+    board.left(90)
     board.forward(100)
+
+    board.left(90)
+    board.forward(300)
 
 #==================================================================================
     
@@ -598,7 +595,41 @@ def terfogat():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
-    
+
+#==================================================================================
+
+    board = turtle.Turtle()
+
+    board.left(90)
+    board.forward(100)
+
+    board.left(90)
+    board.forward(300)
+
+    board.left(90)
+    board.forward(100)
+
+    board.left(90)
+    board.forward(300)
+
+    board.left(45)
+    board.forward(50)
+
+    board.left(45)
+    board.forward(100)
+
+    board.left(135)
+    board.forward(50)
+
+    board.left(180)
+    board.forward(50)
+
+    board.left(135)
+    board.forward(300)
+
+    board.left(45)
+    board.forward(50)
+
     abl6.mainloop()
 
 #==================================================================================
