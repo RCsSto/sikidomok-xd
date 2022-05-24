@@ -66,13 +66,13 @@ def felszin():
     
     board = turtle.Turtle()
 
-    board.forward(100)
+    board.forward(200)
     board.left(90) 
 
     board.forward(100)
     board.left(90) 
 
-    board.forward(100)
+    board.forward(200)
     board.left(90) 
 
     board.forward(100)
@@ -124,18 +124,35 @@ def terfogat():
 
     board = turtle.Turtle()
 
-    board.forward(100)
-    board.left(90) 
+    board.left(45)
+    board.forward(50)
 
+    board.left(45)
     board.forward(100)
-    board.left(90) 
 
+    board.left(135)
+    board.forward(50)
+
+    board.left(180)
+    board.forward(50)
+
+    board.left(135)
+    board.forward(300)
+
+    board.left(45)
+    board.forward(50)
+
+    board.left(45)
     board.forward(100)
-    board.left(90) 
 
+    board.left(90)
+    board.forward(300)
+
+    board.left(90)
     board.forward(100)
-    board.left(90) 
 
+    board.left(90)
+    board.forward(300)
 
 #==================================================================================
     
@@ -207,13 +224,13 @@ def felszin():
 
     board = turtle.Turtle()
 
-    board.forward(100)
+    board.forward(200)
  
     board.left(120)
-    board.forward(100)
+    board.forward(200)
  
     board.left(120)
-    board.forward(100)
+    board.forward(200)
 
     abl3.mainloop()
 
@@ -612,24 +629,6 @@ def terfogat():
     board.left(90)
     board.forward(300)
 
-    board.left(45)
-    board.forward(50)
-
-    board.left(45)
-    board.forward(100)
-
-    board.left(135)
-    board.forward(50)
-
-    board.left(180)
-    board.forward(50)
-
-    board.left(135)
-    board.forward(300)
-
-    board.left(45)
-    board.forward(50)
-
     abl6.mainloop()
 
 #==================================================================================
@@ -678,6 +677,19 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+    board = turtle.Turtle()
+
+    board.forward(200)
+ 
+    board.left(155)
+    board.forward(200)
+
+    board.left(70)
+    board.forward(50)
+    
+    board.left(60)
+    board.forward(55)
     
     abl6.mainloop()
 
@@ -716,6 +728,21 @@ def terfogat():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+    board = turtle.Turtle()
+
+    board.forward(200)
+ 
+    board.left(155)
+    board.forward(200)
+
+    board.left(70)
+    board.forward(50)
+    
+    board.left(60)
+    board.forward(55)
+    
+    abl6.mainloop()
     
     abl6.mainloop()
 
@@ -765,6 +792,20 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+    board = turtle.Turtle()
+
+    board.left(45)
+    board.forward(200)
+ 
+    board.left(90)
+    board.forward(200)
+
+    board.left(90)
+    board.forward(200)
+ 
+    board.left(90)
+    board.forward(200)
     
     abl7.mainloop()
 
@@ -836,8 +877,7 @@ def felszin():
     szoveg4 = Label(abl8, text = "Eredmény:")
     gomb1 = Button(abl8, text = "Számítás", command = szamit)
     mezo1 = Entry(abl8)
-    mezo2 = Entry(abl8)
-    mezo3 = Entry(abl8)
+
     mezo4 = Entry(abl8)
     szoveg1.grid(row = 1)
     szoveg4.grid(row = 5)
@@ -846,7 +886,21 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
-    
+
+    board = turtle.Turtle()
+
+    board.forward(200)
+    board.left(90) 
+
+    board.forward(200)
+    board.left(90) 
+
+    board.forward(200)
+    board.left(90) 
+
+    board.forward(200)
+    board.left(90) 
+
     abl8.mainloop()
 
 def terfogat():
@@ -927,6 +981,8 @@ def felszin():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+    turtle.circle(100)
     
     abl9.mainloop()
 
@@ -965,6 +1021,8 @@ def terfogat():
     mezo2.grid(row = 2, column = 2, sticky = W)
     mezo3.grid(row = 3, column = 2, sticky = W)
     mezo4.grid(row = 5, column = 2, sticky = W)
+
+    turtle.circle(100)
     
     abl9.mainloop()
 
